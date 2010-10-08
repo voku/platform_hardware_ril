@@ -8,8 +8,11 @@ LOCAL_SRC_FILES:= \
 
 
 LOCAL_SHARED_LIBRARIES := \
+	libbinder \
 	libcutils \
-	libril
+	libhardware_legacy \
+	libril \
+	libutils
 
 ifeq ($(TARGET_ARCH),arm)
 LOCAL_SHARED_LIBRARIES += libdl
